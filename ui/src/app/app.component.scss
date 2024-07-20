@@ -1,0 +1,16 @@
+#body { 
+  display: grid;
+  grid: min-content auto min-content / 1fr;
+  height: 100%;
+}
+
+header,
+footer {
+  grid-column: 1 / -1;
+}
+
+main {
+    margin: 1rem;
+}
+
+
