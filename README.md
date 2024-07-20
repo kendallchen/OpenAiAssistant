@@ -5,6 +5,8 @@ API setup
         npm init -y
     install express
         npm install express
+    install cors
+        npm install cors
     run it
         node app.js
 
