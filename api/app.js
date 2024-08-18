@@ -1,3 +1,5 @@
+// import { IChatMsg, MessageType } from '../model/IChatMsg';
+
 const express = require('express');
 const cors = require('cors');
 
@@ -11,7 +13,8 @@ const corsOption = {
 app.use(cors(corsOption));
 
 app.get('/greet', (req, res) => {
-    res.send('hi there');
+    const msg = {  message: 'new there'};
+    res.send(msg);
 });
 
 app.listen(port, () => {

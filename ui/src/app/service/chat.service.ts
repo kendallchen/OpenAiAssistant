@@ -34,7 +34,7 @@ export class ChatService {
                     const receiveMsg : IChatMsg = { type: MessageType.Receive, message : result.message };
                     this.chatHistoryRecord.push(receiveMsg);
                     this.chatHistory.next(this.chatHistoryRecord.slice().reverse());
-                }                    
+                }                     
             }
         )
         return this.chatHistory$;
